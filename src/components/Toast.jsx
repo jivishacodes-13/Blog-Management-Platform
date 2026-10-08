@@ -1,0 +1,2 @@
+import { CheckCircle2, X } from 'lucide-react';
+export default function Toast({ message, onClose }) { if(!message) return null; return <div className="fixed bottom-5 right-5 z-50 flex max-w-[calc(100vw-2rem)] items-center gap-3 rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-xl dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"><CheckCircle2 size={18}/><span>{message}</span><button onClick={onClose} className="rounded-full p-1 opacity-60 hover:opacity-100" aria-label="Close notification"><X size={15}/></button></div> }
